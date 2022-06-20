@@ -15,14 +15,32 @@
     --font-secondary:'Open Sans', sans-serif;
 }
 /* Utility class  */
+.btn{
+    background-color: var(--clr-primary);
+    color: #FFFFFF;
+}
+.logo{
+    width: 13em;
+}
 .box{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .txt-lg{
-font-size: 2.5em;
+font-size: 2.9em;
 font-family: var(--font-primary);
 font-weight: 600;
+}
+.txt-sm{
+    font-size: 1.2em;
+    margin: 1.6em 0;
+    font-family: var(--font-secondary);
+    font-weight: 400;
+}
+.txt-md{
+font-family: var(--font-secondary);
+font-size: 2em;
+
 }
 /* The header element containing the nav elements  */
 header{
@@ -30,7 +48,8 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--clr-secondary-pale);
-    padding: 3em;
+    padding: 4em;
+    margin-bottom: 10em;
 }
 /* The logo and the navigatiion button */
 nav{
@@ -39,10 +58,8 @@ nav{
     align-items: center;
     margin-bottom: 4em;
 }
-.logo{
-    width: 10em ;
-}
-.nav-button{
+
+.nav-btn{
     background-color:#FFFFFF;
     color: #000;
     padding: 1em 4em; 
@@ -50,14 +67,55 @@ nav{
     border-radius: 50px;
     font-family: var(--font-secondary);
     font-weight: 700;
+    font-size: 1em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
 .header-img{
     width: 45em;
 }
 .header-description{
     display: flex;
-    justify-content: center;
     align-items: center;
 }
+.header-btn{
+    padding: 1.5em 6em;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+}
+.header-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+/* The boxes with a description and an image  */
+.description{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 7em;
+}
+section img{
+    width: 25em;
+    display: flex;
+    justify-content: flex-end;
+}
+section{
+    margin: 3em;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    height: 29em;
+    border-radius: 15px;
 
-
+}
+.description p{
+    margin: 1em 0;
+}
+.img-container{
+    display: flex;
+    align-items: center;
+    padding: 2em 0 2em 10em;
+}
