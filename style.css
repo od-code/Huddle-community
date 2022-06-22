@@ -106,7 +106,7 @@ section img{
 }
 section{
     margin: 3em;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 15px;
     height: 29em;
     border-radius: 15px;
 
@@ -148,4 +148,44 @@ footer{
     background-color: var(--clr-secontary-dark);
     color: #FFFFFF;
     padding: 9em 8em;
+    font-family: var(--font-secondary);
+}
+footer img{
+    color:#FFFFFF;
+}
+footer ul{
+    list-style: none;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer li{
+    margin: 1.5em 0;
+}
+footer a{
+    text-decoration: none;
+    color:#FFFFFF;
+}
+footer span{
+    margin-left: 15px ;
+}
+.col-1>ul li:nth-of-type(2){
+    display: flex;
+    align-items: center;
+}
+.box-footer{
+position: relative;
+left: 23em;
+top:6em;
+background-color: #FFFFFF;
+}
+.col-4{
+    /* display: flex; */
+    flex-direction: column;
+}
+/* The social icons */
+.socials{ 
+    display: flex;
 }
