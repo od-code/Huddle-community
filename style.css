@@ -1,191 +1,299 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-:root{
-    --clr-primary: hsl(322, 100%, 66%);
-    --clr-secondary-pale: hsl(193, 100%, 96%);
-    --clr-secontary-dark: hsl(192, 100%, 9%);
-    --clr-secondary-blue:hsl(208, 11%, 55%);
-    --font-primary:'Poppins', sans-serif;
-    --font-secondary:'Open Sans', sans-serif;
+:root {
+  --clr-primary: hsl(322, 100%, 66%);
+  --clr-secondary-pale: hsl(193, 100%, 96%);
+  --clr-secontary-dark: hsl(192, 100%, 9%);
+  --clr-secondary-blue: hsl(208, 11%, 55%);
+  --font-primary: "Poppins", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
 }
 /* Utility class  */
-.btn{
-    background-color: var(--clr-primary);
-    color: #FFFFFF;
+.btn {
+  background-color: var(--clr-primary);
+  color: #ffffff;
 }
-.logo{
-    width: 13em;
+.logo {
+  width: 13em;
 }
-.box{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.txt-lg{
-font-size: 2.9em;
-font-family: var(--font-primary);
-font-weight: 600;
+.txt-lg {
+  font-size: 2.9em;
+  font-family: var(--font-primary);
+  font-weight: 600;
 }
-.txt-sm{
-    font-size: 1.2em;
-    margin: 1.6em 0;
-    font-family: var(--font-secondary);
-    font-weight: 400;
+.txt-sm {
+  font-size: 1.2em;
+  margin: 1.6em 0;
+  font-family: var(--font-secondary);
+  font-weight: 400;
 }
-.txt-md{
-font-family: var(--font-secondary);
-font-size: 2em;
-
+.txt-md {
+  font-family: var(--font-secondary);
+  font-size: 2em;
 }
 /* The header element containing the nav elements  */
-header{
-    background-image: url(./images/bg-hero-desktop.svg);
+header {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--clr-secondary-pale);
+  padding: 4em;
+  margin-bottom: 10em;
+}
+/* The logo and the navigatiion button */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.nav-btn {
+  background-color: #ffffff;
+  color: #000;
+  padding: 1em 4em;
+  border: none;
+  border-radius: 50px;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.nav-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.header-img {
+  width: 45em;
+}
+.header-description {
+  display: flex;
+  align-items: center;
+}
+.header-btn {
+  padding: 1.5em 6em;
+  border: none;
+  border-radius: 50px;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+}
+.header-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* The boxes with a description and an image  */
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7em;
+}
+section img {
+  width: 25em;
+}
+section {
+  margin: 3em;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 15px;
+  height: 29em;
+  border-radius: 15px;
+}
+.description p {
+  margin: 1em 0;
+  color: var(--clr-secontary-blue);
+}
+.img-container {
+  display: flex;
+  align-items: center;
+  padding: 2em 0 2em 10em;
+}
+/* The box with a button near the footer  */
+.box-footer {
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 4em;
+  border-radius: 20px;
+  position: relative;
+  left: 23em;
+  top: 6em;
+  background-color: #ffffff;
+}
+.btn-footer {
+  padding: 1.5em 7em;
+  border-radius: 50px;
+  border: none;
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: 2em;
+
+}
+.btn-footer:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* The footer  */
+footer {
+  background-color: var(--clr-secontary-dark);
+  color: #ffffff;
+  padding: 9em 8em;
+  font-family: var(--font-secondary);
+}
+footer img {
+  color: #ffffff;
+}
+footer ul {
+  list-style: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer li {
+  margin: 1.5em 0;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer span {
+  margin-left: 15px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.col-1 > ul li:nth-of-type(2) {
+  display: flex;
+  align-items: flex-start;
+}
+.col-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* The social icons */
+.socials {
+  display: flex;
+}
+.socials i {
+  margin-right: 2em;
+  border: 2px solid #ffffff;
+  padding: 0.5em;
+  border-radius: 80px;
+}
+.socials i:hover {
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+  cursor: pointer;
+}
+.col-4 p {
+  margin-top: 5em;
+}
+/* For Mobile phones  */
+@media screen and (max-width: 425px) {
+  /* Utility classes for the fonts sizes  */
+  .txt-lg {
+    font-size: 1.5em;
+  }
+  .txt-sm {
+    font-size: 1em;
+  }
+  .txt-md{
+    font-size: 1.6em;
+  }
+  .box {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .box-b{
+    display: flex;
+    flex-direction: column;
+  }
+  /* The header and the navigation elements  */
+  header {
+    background: url(./images/bg-hero-mobile.svg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: var(--clr-secondary-pale);
-    padding: 4em;
-    margin-bottom: 10em;
-}
-/* The logo and the navigatiion button */
-nav{
+    padding: 2em 1em;
+  }
+  .nav-btn {
+    padding: 0.5em 1.5em;
+    font-size: 0.8em;
+  }
+  .logo {
+    width: 8em;
+  }
+  .box-header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4em;
-}
-
-.nav-btn{
-    background-color:#FFFFFF;
-    color: #000;
-    padding: 1em 4em; 
-    border: none;
-    border-radius: 50px;
-    font-family: var(--font-secondary);
-    font-weight: 700;
-    font-size: 1em;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.nav-btn:hover{
-    cursor: pointer;
-    opacity: 0.7;
-}
-.header-img{
-    width: 45em;
-}
-.header-description{
-    display: flex;
-    align-items: center;
-}
-.header-btn{
-    padding: 1.5em 6em;
-    border: none;
-    border-radius: 50px;
-    font-family: var(--font-secondary);
-    font-weight: 700;
-}
-.header-btn:hover{
-    cursor: pointer;
-    opacity: 0.7;
-}
-/* The boxes with a description and an image  */
-.description{
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 7em;
-}
-section img{
-    width: 25em;
-    display: flex;
-    justify-content: flex-end;
-}
+    flex-direction: column;
+  }
+  .header-description {
+    text-align: center;
+    padding: 1em 0.7em;
+  }
+  .header-btn {
+    padding: 0.9em 4em;
+    margin-bottom: 3em;
+  }
+  .header-img {
+    width: 20em;
+    margin: auto;
+  }
+  /* The boxes with an image and a description  */
 section{
-    margin: 3em;
-    box-shadow: rgba(0, 0, 0, 0.07) 0px 5px 15px;
-    height: 29em;
-    border-radius: 15px;
-
+  height: auto;
+  margin: 1.5em;
 }
-.description p{
-    margin: 1em 0;
-}
-.img-container{
+  section img{
+    width: 18em;
+  }
+  .description{
+    text-align: center;
+    padding: 2em;
+  }
+  .img-container {
     display: flex;
     align-items: center;
-    padding: 2em 0 2em 10em;
-}
-/* The box with a button near the footer  */
-.box-footer{
-    width: 50%;
+    justify-content: center;
+    padding:0;
+  }
+  /* The box container with a button at the footer  */
+  .box-footer {
+    width: 80%;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 3em 4em;
+    /* justify-content: center; */
+     align-items: center;
+    padding: 3em 3em;
     border-radius: 20px;
-}
-.btn-footer{
-    padding: 1.5em 7em;
-    border-radius: 50px;
-    border: none;
-    font-family: var(--font-secondary);
-    font-weight: 700;
-    font-size: 1em;
+    /* position: relative; */
+    margin: auto;
+    background-color: #ffffff;
+  }
+  .box-footer h2{
+    font-size: 1.5em;
+
+  }
+  .btn-footer {
+    padding: 0.9em 3em;
+    font-size:0.6em;
     margin-top: 2em;
-}
-.btn-footer:hover{
-    cursor: pointer;
-    opacity: 0.7;
-}
-/* The footer  */
-footer{
-    background-color: var(--clr-secontary-dark);
-    color: #FFFFFF;
-    padding: 9em 8em;
-    font-family: var(--font-secondary);
-}
-footer img{
-    color:#FFFFFF;
-}
-footer ul{
-    list-style: none;
-}
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-footer li{
-    margin: 1.5em 0;
-}
-footer a{
-    text-decoration: none;
-    color:#FFFFFF;
-}
-footer span{
-    margin-left: 15px ;
-}
-.col-1>ul li:nth-of-type(2){
-    display: flex;
-    align-items: center;
-}
-.box-footer{
-position: relative;
-left: 23em;
-top:6em;
-background-color: #FFFFFF;
-}
-.col-4{
-    /* display: flex; */
-    flex-direction: column;
-}
-/* The social icons */
-.socials{ 
-    display: flex;
+  
+  }
+
 }
