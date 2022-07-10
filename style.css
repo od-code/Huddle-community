@@ -273,20 +273,20 @@ section{
   }
   /* The box container with a button at the footer  */
   .box-footer {
-    width: 80%;
+    width: 90%;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
      align-items: center;
-    padding: 3em 3em;
+    padding: 3em 1em;
     border-radius: 20px;
-    /* position: relative; */
-    margin: auto;
     background-color: #ffffff;
+    position: relative;
+  left: 1.5em;
+  top: 6em;
   }
   .box-footer h2{
-    font-size: 1.5em;
+    font-size: 1.1em;
 
   }
   .btn-footer {
@@ -295,5 +295,25 @@ section{
     margin-top: 2em;
   
   }
+  /* The footer with the links  */
+  footer .container{
+display: flex;
+flex-direction: column;
 
+  }
+    footer{
+    padding: 9em 0;
+    }
+    ul.socials{
+    display: flex;
+    justify-content: center;
+  }
+  .col-4 p {
+    margin-top: 2em;
+  }
+.col-2, .col-3{
+  margin: 0em 14em 0em 0 ;
 }
+  }
+
+
